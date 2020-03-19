@@ -1,8 +1,8 @@
 {
-	"name" : "Kraken",
+	"name" : "kraken-multisampler",
 	"version" : 1,
 	"creationdate" : 3667391349,
-	"modificationdate" : 3667469677,
+	"modificationdate" : 3667478410,
 	"viewrect" : [ 19.0, 106.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,

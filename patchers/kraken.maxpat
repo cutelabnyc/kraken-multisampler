@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1195.0, 937.0 ],
+		"rect" : [ 437.0, 222.0, 584.0, 284.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -2806,7 +2806,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "kraken_voice.maxpat",
-				"bootpath" : "~/cute/Kraken/patchers",
+				"bootpath" : "~/cute/kraken-multisampler/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
