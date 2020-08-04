@@ -40,6 +40,59 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-107",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 192.0, 389.0, 71.0, 22.0 ],
+					"text" : "mutefirst $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"appearance" : 1,
+					"id" : "obj-100",
+					"maxclass" : "live.text",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 192.0, 349.0, 68.5, 14.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 140.0, 59.5, 68.5, 14.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "val1", "val2" ],
+							"parameter_linknames" : 1,
+							"parameter_longname" : "Mute First",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "mute-first",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"text" : "Mute First",
+					"texton" : "Mute First",
+					"varname" : "Mute First"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-97",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 192.0, 434.0, 82.0, 22.0 ],
+					"text" : "s ---alignment"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-93",
 					"lastchannelcount" : 2,
 					"maxclass" : "mc.live.gain~",
@@ -78,7 +131,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 295.5, 901.0, 60.0, 16.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 141.250004261732101, 69.5, 60.0, 16.0 ],
+					"presentation_rect" : [ 99.0, 103.5, 60.0, 16.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
@@ -836,7 +889,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 2554.75, 743.0, 30.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 126.0, 109.0, 30.0, 18.0 ],
+					"presentation_rect" : [ 176.250004261732101, 137.0, 30.0, 18.0 ],
 					"text" : "Align",
 					"textjustification" : 0
 				}
@@ -850,7 +903,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 2435.75, 743.0, 30.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 27.5, 109.0, 30.0, 18.0 ],
+					"presentation_rect" : [ 74.5, 137.0, 30.0, 18.0 ],
 					"text" : "Start",
 					"textjustification" : 0
 				}
@@ -950,7 +1003,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 2622.0, 789.0, 41.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 135.0, 122.0, 41.0, 48.0 ],
+					"presentation_rect" : [ 140.0, 122.0, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_linknames" : 1,
@@ -977,7 +1030,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 2563.0, 789.0, 41.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 99.0, 122.0, 41.0, 48.0 ],
+					"presentation_rect" : [ 104.0, 122.0, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_exponent" : 2.0,
@@ -1128,7 +1181,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 460.0, 179.0, 50.0, 22.0 ],
-					"text" : "59 0"
+					"text" : "64 0"
 				}
 
 			}
@@ -2660,7 +2713,7 @@
 					"maxclass" : "bpatcher",
 					"numinlets" : 6,
 					"numoutlets" : 6,
-					"offset" : [ 0.0, -96.0 ],
+					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "float", "", "", "", "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
@@ -3916,6 +3969,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-107", 0 ],
+					"source" : [ "obj-100", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-104", 0 ],
 					"source" : [ "obj-101", 0 ]
 				}
@@ -3953,6 +4013,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
 					"source" : [ "obj-105", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-97", 0 ],
+					"source" : [ "obj-107", 0 ]
 				}
 
 			}
@@ -5142,6 +5209,7 @@
  ],
 		"parameters" : 		{
 			"obj-10" : [ "playback", "playback", 0 ],
+			"obj-100" : [ "Mute First", "mute-first", 0 ],
 			"obj-23::obj-124" : [ "deviation", "deviation", 0 ],
 			"obj-23::obj-328" : [ "increment", "increment", 0 ],
 			"obj-23::obj-341" : [ "scaledexponential", "scaledexponential", 0 ],
