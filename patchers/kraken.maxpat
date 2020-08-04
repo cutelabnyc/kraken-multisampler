@@ -1372,7 +1372,6 @@
 					"presentation_rect" : [ 104.0, 122.0, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_exponent" : 2.0,
 							"parameter_linknames" : 1,
 							"parameter_longname" : "Align Fine",
 							"parameter_mmax" : 1000.0,
@@ -1427,7 +1426,6 @@
 					"presentation_rect" : [ 4.0, 122.0, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_exponent" : 1.75,
 							"parameter_linknames" : 1,
 							"parameter_longname" : "Start Fine",
 							"parameter_mmax" : 500.0,
@@ -2858,7 +2856,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 568.5, 964.0, 50.0, 22.0 ],
-					"text" : "4"
+					"text" : "3"
 				}
 
 			}
