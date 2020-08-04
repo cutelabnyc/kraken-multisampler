@@ -162,7 +162,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
+						"rect" : [ 250.0, 205.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -230,9 +230,10 @@
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
 											"parameter_enum" : [ "val1", "val2" ],
-											"parameter_longname" : "live.text[2]",
+											"parameter_linknames" : 1,
+											"parameter_longname" : "Hold",
 											"parameter_mmax" : 1,
-											"parameter_shortname" : "live.text[2]",
+											"parameter_shortname" : "Hold",
 											"parameter_type" : 2
 										}
 
@@ -240,7 +241,7 @@
 ,
 									"text" : "Hold",
 									"texton" : "Hold",
-									"varname" : "live.text[2]"
+									"varname" : "Hold"
 								}
 
 							}
@@ -259,16 +260,17 @@
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
 											"parameter_enum" : [ "val1", "val2" ],
-											"parameter_longname" : "live.text[1]",
+											"parameter_linknames" : 1,
+											"parameter_longname" : "Stop",
 											"parameter_mmax" : 1,
-											"parameter_shortname" : "live.text[1]",
+											"parameter_shortname" : "Stop",
 											"parameter_type" : 2
 										}
 
 									}
 ,
 									"text" : "Stop",
-									"varname" : "live.text[1]"
+									"varname" : "Stop"
 								}
 
 							}
@@ -321,7 +323,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 698.25, 375.0, 47.0, 16.5 ],
+					"patching_rect" : [ 698.25, 375.0, 59.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 107.0, 14.0, 49.0, 15.0 ],
 					"viewvisibility" : 1
@@ -502,9 +504,10 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text",
+							"parameter_linknames" : 1,
+							"parameter_longname" : "Bass Mono",
 							"parameter_mmax" : 1,
-							"parameter_shortname" : "live.text",
+							"parameter_shortname" : "Bass Mono",
 							"parameter_type" : 2
 						}
 
@@ -512,7 +515,7 @@
 ,
 					"text" : "Bass Mono",
 					"texton" : "Bass Mono",
-					"varname" : "live.text"
+					"varname" : "Bass Mono"
 				}
 
 			}
@@ -5536,8 +5539,8 @@
 			"obj-10" : [ "playback", "playback", 0 ],
 			"obj-100" : [ "Mute First", "mute-first", 0 ],
 			"obj-111" : [ "Smart Compression", "Smart Compression", 0 ],
-			"obj-129::obj-114" : [ "live.text[1]", "live.text[1]", 0 ],
-			"obj-129::obj-117" : [ "live.text[2]", "live.text[2]", 0 ],
+			"obj-129::obj-114" : [ "Stop", "Stop", 0 ],
+			"obj-129::obj-117" : [ "Hold", "Hold", 0 ],
 			"obj-23::obj-124" : [ "deviation", "deviation", 0 ],
 			"obj-23::obj-328" : [ "increment", "increment", 0 ],
 			"obj-23::obj-341" : [ "scaledexponential", "scaledexponential", 0 ],
@@ -5549,7 +5552,7 @@
 			"obj-67" : [ "Start Fine", "Fine", 0 ],
 			"obj-70" : [ "Start Coarse", "Coarse", 0 ],
 			"obj-73" : [ "Align Fine", "Fine", 0 ],
-			"obj-75" : [ "live.text", "live.text", 0 ],
+			"obj-75" : [ "Bass Mono", "Bass Mono", 0 ],
 			"obj-77" : [ "Align Coarse", "Coarse", 0 ],
 			"obj-93" : [ "Gain", "Gain", 0 ],
 			"parameterbanks" : 			{
