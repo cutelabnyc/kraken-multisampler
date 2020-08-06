@@ -42,11 +42,11 @@
 				"box" : 				{
 					"id" : "obj-94",
 					"maxclass" : "newobj",
-					"numinlets" : 5,
-					"numoutlets" : 5,
-					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 1441.0, 116.0, 94.0, 22.0 ],
-					"text" : "route none b  \" \""
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1441.0, 116.0, 66.0, 22.0 ],
+					"text" : "route none"
 				}
 
 			}
@@ -1802,6 +1802,7 @@
 					"patching_rect" : [ 2866.0, 739.0, 123.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 159.0, 113.0, 300.0, 18.0 ],
+					"text" : "nudes-loop.wav",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
 				}
 
@@ -4844,7 +4845,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-56", 0 ],
-					"source" : [ "obj-94", 4 ]
+					"source" : [ "obj-94", 1 ]
 				}
 
 			}
