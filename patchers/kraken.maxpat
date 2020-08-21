@@ -1946,7 +1946,6 @@
 					"patching_rect" : [ 2866.0, 739.0, 123.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 159.0, 113.0, 300.0, 18.0 ],
-					"text" : "edm-kick-01.wav",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
 				}
 
@@ -2325,7 +2324,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 568.5, 964.0, 50.0, 22.0 ],
-					"text" : "4"
+					"text" : "1"
 				}
 
 			}
@@ -2455,7 +2454,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 6,
 					"offset" : [ 0.0, -96.0 ],
-					"outlettype" : [ "", "float", "float", "float", "float", "float" ],
+					"outlettype" : [ "float", "float", "float", "float", "float", "float" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -2467,7 +2466,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 115.0, 192.0, 894.0, 462.0 ],
+						"rect" : [ 102.0, 501.0, 894.0, 462.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -2496,6 +2495,58 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-8",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 105.5, 197.0, 41.0, 22.0 ],
+									"text" : "pak f f"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "float" ],
+									"patching_rect" : [ 117.0, 243.0, 29.5, 22.0 ],
+									"text" : "+ 0."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "live.dial",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "float" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 180.0, 100.0, 27.0, 37.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 34.0, 144.0, 27.0, 37.0 ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_linknames" : 1,
+											"parameter_longname" : "deviation-fine",
+											"parameter_mmax" : 0.01,
+											"parameter_shortname" : "deviation-fine",
+											"parameter_type" : 0,
+											"parameter_unitstyle" : 1
+										}
+
+									}
+,
+									"showname" : 0,
+									"varname" : "deviation-fine"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-27",
 									"maxclass" : "newobj",
@@ -3061,15 +3112,15 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-17", 0 ],
-									"source" : [ "obj-124", 0 ]
+									"destination" : [ "obj-3", 0 ],
+									"source" : [ "obj-124", 1 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-3", 0 ],
-									"source" : [ "obj-124", 1 ]
+									"destination" : [ "obj-8", 0 ],
+									"source" : [ "obj-124", 0 ]
 								}
 
 							}
@@ -3216,6 +3267,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-8", 1 ],
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-6", 1 ],
 									"source" : [ "obj-5", 0 ]
 								}
@@ -3225,6 +3283,20 @@
 								"patchline" : 								{
 									"destination" : [ "obj-9", 0 ],
 									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-17", 0 ],
+									"source" : [ "obj-7", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"source" : [ "obj-8", 0 ]
 								}
 
 							}
@@ -5392,6 +5464,7 @@
 			"obj-23::obj-341" : [ "scaledexponential", "scaledexponential", 0 ],
 			"obj-23::obj-362" : [ "harmonic", "harmonic", 0 ],
 			"obj-23::obj-364" : [ "subharmonic", "subharmonic", 0 ],
+			"obj-23::obj-4" : [ "deviation-fine", "deviation-fine", 0 ],
 			"obj-23::obj-5" : [ "increment-fine", "increment-fine", 0 ],
 			"obj-330" : [ "mode", "mode", 0 ],
 			"obj-53" : [ "live.drop", "live.drop", 0 ],
