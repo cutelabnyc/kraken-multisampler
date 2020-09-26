@@ -2,7 +2,7 @@
 	"name" : "kraken-multisampler",
 	"version" : 1,
 	"creationdate" : 3667391349,
-	"modificationdate" : 3669182239,
+	"modificationdate" : 3683006965,
 	"viewrect" : [ 19.0, 106.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -17,6 +17,11 @@
 			}
 ,
 			"kraken_voice.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"clickless_play~.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
