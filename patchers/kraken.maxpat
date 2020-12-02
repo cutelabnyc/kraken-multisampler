@@ -498,8 +498,11 @@
 			}
 , 			{
 				"box" : 				{
+					"activebgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"appearance" : 1,
 					"fontsize" : 13.0,
 					"id" : "obj-148",
+					"lcdcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"maxclass" : "live.menu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -509,6 +512,7 @@
 					"pictures" : [ "highcut.svg", "lowcut.svg", "bandpass.svg", "notch.svg" ],
 					"presentation" : 1,
 					"presentation_rect" : [ 565.5, 113.0, 39.0, 19.0 ],
+					"remapsvgcolors" : 1,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "lo", "hi", "band", "notch" ],
@@ -521,7 +525,9 @@
 
 					}
 ,
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"usepicture" : 1,
+					"usesvgviewbox" : 1,
 					"varname" : "Filter-Type"
 				}
 
@@ -539,6 +545,7 @@
 			}
 , 			{
 				"box" : 				{
+					"activebgcolor" : [ 0.157, 0.157, 0.157, 1.0 ],
 					"id" : "obj-146",
 					"maxclass" : "live.menu",
 					"numinlets" : 1,
@@ -559,6 +566,7 @@
 
 					}
 ,
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"varname" : "live.menu"
 				}
 
@@ -3977,7 +3985,6 @@
 					"patching_rect" : [ 3115.5, 704.671640872955322, 123.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 159.0, 113.0, 300.0, 18.0 ],
-					"text" : "pig.wav",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
 				}
 
