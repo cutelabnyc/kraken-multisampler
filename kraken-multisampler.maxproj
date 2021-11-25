@@ -2,7 +2,7 @@
 	"name" : "kraken-multisampler",
 	"version" : 1,
 	"creationdate" : 3667391349,
-	"modificationdate" : 3683006965,
+	"modificationdate" : 3720697249,
 	"viewrect" : [ 19.0, 106.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -24,6 +24,24 @@
 			"clickless_play~.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
+			}
+,
+			"kraken_tester.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+
+		}
+,
+		"code" : 		{
+			"gen.swanramp.gendsp" : 			{
+				"kind" : "gendsp",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/cute/kraken-multisampler/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
 			}
 
 		}
