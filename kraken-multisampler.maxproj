@@ -2,7 +2,7 @@
 	"name" : "kraken-multisampler",
 	"version" : 1,
 	"creationdate" : 3667391349,
-	"modificationdate" : 3720697249,
+	"modificationdate" : 3721394960,
 	"viewrect" : [ 19.0, 106.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -33,15 +33,18 @@
 
 		}
 ,
+		"media" : 		{
+			"CuteLabTrace.svg" : 			{
+				"kind" : "vectorimagefile",
+				"local" : 1
+			}
+
+		}
+,
 		"code" : 		{
 			"gen.swanramp.gendsp" : 			{
 				"kind" : "gendsp",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/cute/kraken-multisampler/patchers",
-					"projectrelativepath" : "./patchers"
-				}
-
+				"local" : 1
 			}
 
 		}
