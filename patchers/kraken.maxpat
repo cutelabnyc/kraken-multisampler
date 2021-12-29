@@ -10,14 +10,14 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 373.0, 87.0, 678.0, 929.0 ],
+		"rect" : [ 1947.0, 150.0, 678.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
 		"gridonopen" : 1,
-		"gridsize" : [ 15.0, 15.0 ],
+		"gridsize" : [ 2.0, 2.0 ],
 		"gridsnaponopen" : 1,
 		"objectsnaponopen" : 1,
 		"statusbarvisible" : 2,
@@ -39,6 +39,34 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-225",
+					"maxclass" : "live.comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 424.250000432133675, 244.0, 153.0, 18.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 484.833333999999979, 128.629999999999995, 36.0, 18.0 ],
+					"text" : "Cutoff",
+					"textjustification" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-222",
+					"maxclass" : "live.comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 159.0, 235.0, 150.0, 18.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 93.250000432133675, 125.0, 36.0, 18.0 ],
+					"text" : "Cutoff",
+					"textjustification" : 0
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-205",
 					"maxclass" : "newobj",
@@ -2686,9 +2714,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 816.0, 964.0, 49.0, 36.0 ],
+					"patching_rect" : [ 816.0, 964.0, 25.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 487.666667938232422, 131.66666641831398, 49.0, 36.0 ],
+					"presentation_rect" : [ 487.666668000000016, 144.666665999999992, 50.166665999999999, 23.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_exponent" : 4.0,
@@ -2696,13 +2724,14 @@
 							"parameter_longname" : "Frequency",
 							"parameter_mmax" : 22000.0,
 							"parameter_mmin" : 30.0,
-							"parameter_shortname" : "Frequency",
+							"parameter_shortname" : "Filter Cutoff",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 3
 						}
 
 					}
 ,
+					"showname" : 0,
 					"varname" : "Frequency"
 				}
 
@@ -4353,9 +4382,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 35.5, 729.0, 50.0, 36.0 ],
+					"patching_rect" : [ 35.5, 729.0, 25.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 96.5, 128.0, 50.0, 36.0 ],
+					"presentation_rect" : [ 96.5, 139.5, 53.0, 23.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_exponent" : 2.0,
@@ -4365,13 +4394,14 @@
 							"parameter_longname" : "Cutoff",
 							"parameter_mmax" : 500.0,
 							"parameter_mmin" : 50.0,
-							"parameter_shortname" : "Cutoff",
+							"parameter_shortname" : "Bass Cutoff",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 3
 						}
 
 					}
 ,
+					"showname" : 0,
 					"varname" : "Cutoff"
 				}
 
@@ -10532,7 +10562,7 @@
 			"obj-10" : [ "playback", "playback", 0 ],
 			"obj-100" : [ "Mute First", "mute-first", 0 ],
 			"obj-111" : [ "Smart Compression", "Smart Compression", 0 ],
-			"obj-117" : [ "Frequency", "Frequency", 0 ],
+			"obj-117" : [ "Frequency", "Filter Cutoff", 0 ],
 			"obj-127" : [ "Res", "Res", 0 ],
 			"obj-128" : [ "EnableFilter", "Filter On/Off", 0 ],
 			"obj-129::obj-114" : [ "Stop", "Stop", 0 ],
@@ -10571,7 +10601,7 @@
 			"obj-330" : [ "mode", "mode", 0 ],
 			"obj-391" : [ "CuteLab", "CuteLab", 0 ],
 			"obj-53" : [ "live.drop", "live.drop", 0 ],
-			"obj-57" : [ "Cutoff", "Cutoff", 0 ],
+			"obj-57" : [ "Cutoff", "Bass Cutoff", 0 ],
 			"obj-60" : [ "Spread", "Spread", 0 ],
 			"obj-75" : [ "Bass Mono", "Bass Mono", 0 ],
 			"obj-9" : [ "Weight", "Weight", 0 ],
