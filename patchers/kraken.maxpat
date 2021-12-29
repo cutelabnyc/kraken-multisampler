@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 381.0, 100.0, 678.0, 937.0 ],
+		"rect" : [ 373.0, 87.0, 678.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -2368,7 +2368,7 @@
 							"parameter_linknames" : 1,
 							"parameter_longname" : "Align Coarse",
 							"parameter_mmax" : 500.0,
-							"parameter_shortname" : "Fine",
+							"parameter_shortname" : "Align Coarse",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 5
 						}
@@ -2396,7 +2396,7 @@
 							"parameter_linknames" : 1,
 							"parameter_longname" : "Start Coarse",
 							"parameter_mmax" : 100.0,
-							"parameter_shortname" : "Fine",
+							"parameter_shortname" : "Start Coarse",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 5
 						}
@@ -2424,7 +2424,7 @@
 							"parameter_linknames" : 1,
 							"parameter_longname" : "Align Fine",
 							"parameter_mmax" : 1000.0,
-							"parameter_shortname" : "Fine",
+							"parameter_shortname" : "Align Fine",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 2
 						}
@@ -2452,7 +2452,7 @@
 							"parameter_linknames" : 1,
 							"parameter_longname" : "Start Fine",
 							"parameter_mmax" : 500.0,
-							"parameter_shortname" : "Fine",
+							"parameter_shortname" : "Start Fine",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 2
 						}
@@ -5998,7 +5998,6 @@
 					"patching_rect" : [ 3115.5, 704.671640872955322, 123.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 159.0, 113.0, 300.0, 18.0 ],
-					"text" : "epno.aiff",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
 				}
 
@@ -8417,6 +8416,7 @@
 				"box" : 				{
 					"bgcolor" : [ 0.007843137254902, 0.007843137254902, 0.007843137254902, 1.0 ],
 					"buffername" : "---holster",
+					"chanoffset" : 0,
 					"gridcolor" : [ 0.349019607843137, 0.349019607843137, 0.349019607843137, 0.0 ],
 					"id" : "obj-167",
 					"maxclass" : "waveform~",
@@ -10537,11 +10537,11 @@
 			"obj-128" : [ "EnableFilter", "Filter On/Off", 0 ],
 			"obj-129::obj-114" : [ "Stop", "Stop", 0 ],
 			"obj-129::obj-117" : [ "Hold", "Hold", 0 ],
-			"obj-136" : [ "Align Fine", "Fine", 0 ],
-			"obj-139" : [ "Start Coarse", "Fine", 0 ],
+			"obj-136" : [ "Align Fine", "Align Fine", 0 ],
+			"obj-139" : [ "Start Coarse", "Start Coarse", 0 ],
 			"obj-146" : [ "live.menu", "live.menu", 0 ],
 			"obj-148" : [ "Filter-Type", "Filter-Type", 0 ],
-			"obj-150" : [ "Align Coarse", "Fine", 0 ],
+			"obj-150" : [ "Align Coarse", "Align Coarse", 0 ],
 			"obj-152" : [ "Loop Length", "LoopLen", 0 ],
 			"obj-173" : [ "x-mod", "x-mod", 0 ],
 			"obj-177" : [ "y-mod", "y-mod", 0 ],
@@ -10576,7 +10576,7 @@
 			"obj-75" : [ "Bass Mono", "Bass Mono", 0 ],
 			"obj-9" : [ "Weight", "Weight", 0 ],
 			"obj-93" : [ "Gain", "Gain", 0 ],
-			"obj-96" : [ "Start Fine", "Fine", 0 ],
+			"obj-96" : [ "Start Fine", "Start Fine", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -10586,21 +10586,21 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "CuteLabTrace.svg",
-				"bootpath" : "~/cute/kraken-multisampler/media",
+				"bootpath" : "~/kraken-multisampler/media",
 				"patcherrelativepath" : "../media",
 				"type" : "svg",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "gen.swanramp.gendsp",
-				"bootpath" : "~/cute/kraken-multisampler/patchers",
+				"bootpath" : "~/kraken-multisampler/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "kraken_voice.maxpat",
-				"bootpath" : "~/cute/kraken-multisampler/patchers",
+				"bootpath" : "~/kraken-multisampler/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
